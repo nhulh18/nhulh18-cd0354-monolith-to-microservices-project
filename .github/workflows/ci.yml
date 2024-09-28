@@ -21,7 +21,7 @@ jobs:
         id: buildx
 
       - name: Build Docker images
-        run: docker compose -f docker-compose-build.yaml build --paralle
+        run: docker compose -f docker-compose-build.yaml build --parallel
 
       - name: List Docker images
         run: docker images
